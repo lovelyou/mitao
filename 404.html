@@ -1,1 +1,29 @@
-您进入了404页
+<html>
+  <head>
+    <title>404 - 未发现页面</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body class="font-monospace">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+          <div class="page-content pt-5">
+            <h2>抱歉，你访问的页面走丢拉！</h2>
+            <p class="py-3">不要慌！<strong id="timeRest" class="fs-5 text-danger ps-2">5</strong> 秒后将自动返回网站首页，请稍候...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+    window.onload = function () {
+        setInterval(function()
+        {
+            window.location.href='/'//这里的/表达的就是你当前网站首页
+
+        },3000); //3000代表的是3秒，即3秒后自动跳转至首页
+    }
+</script>
+    
+  </body>
+</html>
